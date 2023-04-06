@@ -1,12 +1,12 @@
 body {
 	font-family: Arial, sans-serif;
-	background-color: #e3eaec;
+	background-color: #f8faed;
 	margin: 0;
 	padding: 0;
 }
 
 header {
-	background-color: rgb(17, 19, 24);
+	background-color: rgb(6, 61, 240);
 	color: rgb(240, 252, 79);
 	padding: 10px;
 }
@@ -37,6 +37,7 @@ main {
 
 section {
 	margin-bottom: 40px;
+	color: rgb(214, 30, 92)
 }
 
 h2 {
@@ -60,4 +61,7 @@ iframe {
 	max-width: 100%;
 	height: 315px;
 	margin-bottom: 20
+}
+footer{
+	color:rgb(245, 245, 243)
 }
