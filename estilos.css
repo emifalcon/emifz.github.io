@@ -1,13 +1,13 @@
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f9fcff;
+	background-color: #09191f;
 	margin: 0;
 	padding: 0;
 }
 
 header {
 	background-color: rgb(21, 73, 218);
-	color: rgb(232, 248, 6);
+	color: rgb(240, 252, 79);
 	padding: 10px;
 }
 
@@ -27,7 +27,7 @@ nav li:last-child {
 }
 
 nav a {
-	color: rgb(21, 9, 129);
+	color: rgb(245, 245, 243);
 	text-decoration: none;
 }
 
