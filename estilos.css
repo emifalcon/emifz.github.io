@@ -27,7 +27,7 @@ nav li:last-child {
 }
 
 nav a {
-	color: #fff;
+	color: rgb(21, 9, 129);
 	text-decoration: none;
 }
 
@@ -60,3 +60,4 @@ iframe {
 	max-width: 100%;
 	height: 315px;
 	margin-bottom: 20
+}
