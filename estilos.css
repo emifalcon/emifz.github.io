@@ -62,8 +62,21 @@ p {
 }
 
 
-img  {
+div {
+	border: 3px solid #4CAF50;
+	padding: 5px;
+  }
+  
+  .img1 {
 	float: left;
+  }
+  
+  .img2 {
+	float: left;
+  }
+  
+  .clearfix {
+	overflow: auto;
   }
 
 iframe {
