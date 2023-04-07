@@ -2,6 +2,7 @@
 table, th, td {
 	border:1px solid rgb(21, 18, 197);
 	color: black;
+	float: left;
   }
 body {
 	font-family: Arial, sans-serif;
