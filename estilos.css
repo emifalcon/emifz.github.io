@@ -21,6 +21,10 @@ nav ul {
 	margin: 0;
 	padding: 0;
 }
+h2{
+	background-color: rgb(4, 4, 26);
+	color: rgb(21, 18, 197);
+}
 
 nav li {
 	display: inline-block;
