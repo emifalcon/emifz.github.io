@@ -65,6 +65,9 @@ img {
 	height: auto;
 	margin-bottom: 20px;
 }
+img2 {
+	float: left;
+  }
 
 iframe {
 	max-width: 100%;
