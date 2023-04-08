@@ -4,11 +4,11 @@ table, th, td {
   }
   table {
 	width: 100%;
-	color: black;
+	color: rgb(21, 24, 240);
   }
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f8faed;
+	background-color: #080113;
 	margin: 0;
 	padding: 0;
 }
