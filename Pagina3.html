@@ -34,6 +34,26 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #3e8e41;
 }
+var form = document.getElementById('contact-form');
+var response = document.getElementById('response');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  var name = document.getElementById('name').value.trim();
+  var email = document.getElementById('email').value.trim();
+  var message = document.getElementById('message').value.trim();
+
+  var errors = [];
+
+  if (name === '') {
+    errors.push('El nombre es obligatorio');
+  } else if (name.length > 50) {
+    errors.push('El nombre no puede tener más de 50 caracteres');
+  }
+
+  if (email === '') {
+    errors.push('El correo electrónico es
 
 
 </style>
@@ -45,8 +65,8 @@ button[type="submit"]:hover {
 		<h1>Historia de Pac-Man</h1>
 		<nav>
 			<ul>
-				<li><a href="#Pagina2.html">Volver a la pagina Anterior</a></li>
-				<li><a href="#index.html">Ir a la pagina Principal</a></li>
+				<li><a href="Pagina2.html">Volver a la pagina Anterior</a></li>
+				<li><a href="index.html">Ir a la pagina Principal</a></li>
 			
 				
 			</ul>
