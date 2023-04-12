@@ -39,6 +39,8 @@ article {
 }
 
 nav ul {
+  color: rgb(245, 245, 243);
+	text-decoration: none;
 	list-style: none;
 	margin: 0;
 	padding: 0;
