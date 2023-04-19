@@ -98,8 +98,10 @@ button[type="submit"]:hover {
 }
 
 img {
+	height: 120px;
+	margin-left:15px;
 	display: block;
-	width: 100%;
+	width: 700px;
 	padding: 10px;
 	margin-bottom: 20px;
 	border: 4px solid rgb(13, 14, 15);
