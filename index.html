@@ -14,7 +14,7 @@
 	<meta charset="UTF-8">
 	<title>Pacman</title>
 	<link rel="stylesheet" href="estilos.css">
-	<link rel="stylesheet" href="carrousel.js">
+
 	<link rel="icon" href="icono.png">
 </head>
 
@@ -61,33 +61,7 @@
 
 	</section>
 
-	<img id="imagen-carrusel" src="">
 
-	<script>
-		let imagenes = [
-			"imagen1.jpg",
-			"imagen2.jpg",
-			"imagen3.jpg",
-			"imagen4.jpg",
-			"imagen5.jpg"
-		];
-
-		let imagenActual = 0;
-
-		function mostrarImagen() {
-			let imagen = document.getElementById("imagen-carrusel");
-			imagen.src = imagenes[imagenActual];
-			imagenActual++;
-			if (imagenActual >= imagenes.length) {
-				imagenActual = 0;
-			}
-			setTimeout(mostrarImagen, 3000); // mostrar la siguiente imagen en 3 segundos
-		}
-
-		window.onload = function () {
-			mostrarImagen();
-		};
-	</script>
 
 
 	<p> </p>
