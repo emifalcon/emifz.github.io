@@ -80,6 +80,7 @@ footer {
 }
 
 button {
+	width: 100px;
 	height: 50px;
 	background-color: rgb(209, 238, 42);
 
