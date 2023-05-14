@@ -58,56 +58,56 @@
 
 
 		<button onclick="anteriorImagen()">
-			<--- </button>
-				<img id="imagenesdelcarrusel" src="" style="width:550px;height:500px;margin-right:10px;">
-				<button onclick="siguienteImagen()">---></button>
+			Anterior </button>
+		<img id="imagenesdelcarrusel" src="" style="width:550px;height:500px;margin-right:10px;">
+		<button onclick="siguienteImagen()">Siguiente</button>
 
-				<script>
-					let imagenes = [
-						"carrouse2.jpg",
-						"carrouse3.jpg",
-						"carrouse4.jpg",
-						"carrouse5.jpg",
-					];
+		<script>
+			let imagenes = [
+				"carrouse2.jpg",
+				"carrouse3.jpg",
+				"carrouse4.jpg",
+				"carrouse5.jpg",
+			];
 
-					let imagenActual = 0;
+			let imagenActual = 0;
 
-					function mostrarImagen() {
-						let imagen = document.getElementById("imagenesdelcarrusel");
-						imagen.src = imagenes[imagenActual];
-						imagenActual++;
-						if (imagenActual >= imagenes.length) {
-							imagenActual = 0;
-						}
-						setTimeout(mostrarImagen, 3000); // mostrar la siguiente imagen en 3 segundos
-					}
+			function mostrarImagen() {
+				let imagen = document.getElementById("imagenesdelcarrusel");
+				imagen.src = imagenes[imagenActual];
+				imagenActual++;
+				if (imagenActual >= imagenes.length) {
+					imagenActual = 0;
+				}
+				setTimeout(mostrarImagen, 3000); // mostrar la siguiente imagen en 3 segundos
+			}
 
-					function siguienteImagen() {
-						imagenActual++;
-						if (imagenActual >= imagenes.length) {
-							imagenActual = 0;
-						}
-						let imagen = document.getElementById("imagenesdelcarrusel");
-						imagen.src = imagenes[imagenActual];
-					}
+			function siguienteImagen() {
+				imagenActual++;
+				if (imagenActual >= imagenes.length) {
+					imagenActual = 0;
+				}
+				let imagen = document.getElementById("imagenesdelcarrusel");
+				imagen.src = imagenes[imagenActual];
+			}
 
-					function anteriorImagen() {
-						imagenActual--;
-						if (imagenActual < 0) {
-							imagenActual = imagenes.length - 1;
-						}
-						let imagen = document.getElementById("imagenesdelcarrusel");
-						imagen.src = imagenes[imagenActual];
-					}
+			function anteriorImagen() {
+				imagenActual--;
+				if (imagenActual < 0) {
+					imagenActual = imagenes.length - 1;
+				}
+				let imagen = document.getElementById("imagenesdelcarrusel");
+				imagen.src = imagenes[imagenActual];
+			}
 
-					window.onload = function () {
-						mostrarImagen();
-					};
-				</script>
+			window.onload = function () {
+				mostrarImagen();
+			};
+		</script>
 
 
 
-				<!-- <img id="imagenesdelcarrusel" src="" style="width:550px;height:500px;margin-right:10px;">
+		<!-- <img id="imagenesdelcarrusel" src="" style="width:550px;height:500px;margin-right:10px;">
 
 		<script>
 			let imagenes = [
