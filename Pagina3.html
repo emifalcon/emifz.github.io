@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="estilosp3.css">
-    <link rel="icon" href="icono.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilosp3.css">
+  <link rel="icon" href="icono.png">
 </head>
+
 <body>
-    <header>
-		<h1>Historia de Pac-Man</h1>
-    <img class="img1"src="pacman-gaming.gif"  style="width:700px;height:120px;margin-left:15px;">
-		<nav>
-			<ul>
-				<li><a href="Pagina2.html">Volver a la pagina Anterior</a></li>
-				<li><a href="index.html">Ir a la pagina Principal</a></li>
-			
-				
-			</ul>
-		</nav>
-    
-	</header>
+  <header>
+    <h1>Historia de Pac-Man</h1>
+    <img class="img1" src="pacman-gaming.gif" style="width:700px;height:120px;margin-left:15px;">
+    <nav>
+      <ul>
+        <li><a href="Pagina2.html">Volver a la pagina Anterior</a></li>
+        <li><a href="index.html">Ir a la pagina Principal</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h1>Formulario de contacto</h1>
-    <form id="contact-form">
-      <label for="name"> Nombre:</label>
-      <input type="text" id="name" name="name" required maxlength="50">
-  
-      <label for="email"> Correo electrónico:</label>
-      <input type="email" id="email" name="email" required maxlength="100" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-  
-      <label for="message"> Mensaje:</label>
-      <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
-  
-      <button type="submit">Enviar</button>
-      
-    </form>
-  
+  <h1>Formulario de contacto</h1>
+  <form id="contact-form" onsubmit="event.preventDefault(); submitForm();">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required maxlength="50">
 
-  
-    
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required maxlength="100"
+      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" rows="5" required maxlength="500"></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    function submitForm() {
+      var form = document.getElementById("contact-form");
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      // Aquí puedes realizar la lógica para enviar el formulario a través de AJAX o cualquier otro método
+
+      // Ejemplo de verificación de campos
+      if (name === "" || email === "" || message === "") {
+        alert("Por favor, completa todos los campos.");
+      } else {
+        // Simulación de envío exitoso
+        alert("El formulario se envió correctamente.");
+        form.reset();
+      }
+    }
+  </script>
 </body>
+
 </html>
