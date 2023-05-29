@@ -72,7 +72,7 @@ li {
 iframe {
   background-color: rgb(6, 61, 240);
 
-
+  float: left;
   width: 560px;
   height: 315px;
 }
