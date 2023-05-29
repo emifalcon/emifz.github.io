@@ -16,8 +16,9 @@ nav ul {
 	margin: 0;
 	padding: 0;
 }
-h2{
-	
+
+h2 {
+
 	color: rgb(21, 18, 197);
 }
 
@@ -54,47 +55,50 @@ p {
 	line-height: 1.5;
 	margin-bottom: 20px;
 }
+
 iframe {
 	max-width: 100%;
 	height: 315px;
 	margin-bottom: 20
 }
-footer{
-background-color: rgb(21, 18, 197);
+
+footer {
+	background-color: rgb(21, 18, 197);
 	color: rgb(242, 241, 253);
 	padding: 5px;
 }
 
-  body{
-        color:rgb(251, 252, 249);
-    }
+body {
+	color: rgb(251, 252, 249);
+}
+
 label {
-  display: block;
-  margin-bottom: 5px;
+	display: block;
+	margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid rgb(22, 19, 209);
-  border-radius: 4px;
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid rgb(235, 15, 44);
+	border-radius: 4px;
 }
 
 button[type="submit"] {
-  padding: 10px 20px;
-  background-color: #234cd3;
-  color: rgb(5, 4, 4);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+	padding: 10px 20px;
+	background-color: #234cd3;
+	color: rgb(5, 4, 4);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #FFCBA4;
+	background-color: #FFCBA4;
 }
 
 img {
@@ -103,5 +107,5 @@ img {
 	padding: 10px;
 	margin-bottom: 20px;
 	border: 4px solid rgb(13, 14, 15);
-	border-radius: 4px solid ;
-  }
+	border-radius: 4px solid;
+}
