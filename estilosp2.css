@@ -63,11 +63,6 @@ h2 {
   width: 500px;
 }
 
-p,
-ul {
-  text-align: right;
-}
-
 li {
   background-color: rgb(15, 14, 14);
   color: rgb(245, 245, 19);
