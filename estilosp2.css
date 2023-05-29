@@ -71,4 +71,6 @@ li {
 
 iframe {
   background-color: rgb(6, 61, 240);
+  flex: right;
+  width: 50%;
 }
