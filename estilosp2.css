@@ -1,3 +1,13 @@
+body {
+
+  font-family: Arial, sans-serif;
+  background-color: #080113;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 article {
   background-color: #1b1be9;
   padding: 20px;
