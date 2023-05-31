@@ -73,6 +73,11 @@ h2 {
   width: 500px;
 }
 
+h3 {
+  color: rgb(236, 250, 41);
+  background-color: rgb(11, 11, 15);
+}
+
 li {
   background-color: rgb(15, 14, 14);
   color: rgb(245, 245, 19);
@@ -80,7 +85,7 @@ li {
 }
 
 iframe {
-  background-color: rgb(6, 61, 240);
+
 
 
   width: 560px;
