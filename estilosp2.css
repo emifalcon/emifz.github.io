@@ -100,7 +100,7 @@ img {
 
 .column {
   float: left;
-  width: 45%;
+  width: 30%;
   padding: 10px;
   height: 800px;
   /* Should be removed. Only for demonstration */
