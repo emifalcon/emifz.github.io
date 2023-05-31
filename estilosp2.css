@@ -100,9 +100,9 @@ img {
 
 .column {
   float: left;
-  width: 30%;
+  width: 35%;
   padding: 10px;
-  height: 500px;
+  height: 600px;
   /* Should be removed. Only for demonstration */
 }
 
