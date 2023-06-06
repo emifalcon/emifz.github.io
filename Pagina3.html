@@ -42,6 +42,64 @@
 
   <script src="formulario.js"></script>
 
+  <script>
+    function submitForm() {
+      var form = document.getElementById("contact-form");
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      // Verificar si el campo de nombre está vacío o si se ingresó un correo electrónico en su lugar
+      if (name === "" || email === "" || message === "") {
+        var errorContainer = document.createElement("div");
+        errorContainer.className = "error";
+
+        var errorMessage = document.createElement("p");
+        errorMessage.innerText = "Por favor, completa todos los campos.";
+
+        errorContainer.appendChild(errorMessage);
+        form.appendChild(errorContainer);
+      } else if (name.includes("@")) {
+        var errorContainer = document.createElement("div");
+        errorContainer.className = "error";
+
+        var errorMessage = document.createElement("p");
+        errorMessage.innerText = "Por favor, ingresa un nombre válido en lugar del correo electrónico.";
+
+        errorContainer.appendChild(errorMessage);
+        form.appendChild(errorContainer);
+      } else {
+        // Crear elementos para mostrar los datos del formulario
+        var dataContainer = document.getElementById("data-container");
+
+        var messageContainer = document.createElement("div");
+        messageContainer.className = "message";
+
+        var nameElement = document.createElement("p");
+        nameElement.innerHTML = "<strong>Nombre:</strong> " + name;
+
+        var emailElement = document.createElement("p");
+        emailElement.innerHTML = "<strong>Correo electrónico:</strong> " + email;
+
+        var messageElement = document.createElement("p");
+        messageElement.innerHTML = "<strong>Mensaje:</strong> " + message;
+
+        // Agregar los elementos al contenedor de datos
+        messageContainer.appendChild(nameElement);
+        messageContainer.appendChild(emailElement);
+        messageContainer.appendChild(messageElement);
+        dataContainer.appendChild(messageContainer);
+
+        // Simulación de envío exitoso
+        var successMessage = document.createElement("p");
+        successMessage.innerText = "El formulario se envió correctamente.";
+
+        form.appendChild(successMessage);
+        form.reset();
+      }
+    }
+  </script>
+
 </body>
 
 </html>
